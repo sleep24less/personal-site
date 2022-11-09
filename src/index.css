@@ -137,9 +137,12 @@ table {
 
 body {
   margin: 0;
+  padding: 0;
+  height: 100vh;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -147,4 +150,54 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-text-primary: #000000;
+  --color-text-secondary: #455463;
+  --color-accent: #430fff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 600px;
+  font-size: 1rem;
+}
+
+.navbar_list {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar_item {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.navbar_item:hover {
+  transition: 0.2s;
+  color: var(--color-accent);
+}
+
+
+.navbar_logo,
+.navbar_logo img {
+  height: 100%;
+  width: auto;
+  opacity: 0.9;
+}
+
+.navbar_logo {
+  height: 80%;
 }
