@@ -1,14 +1,15 @@
 import logo from "../assets/logo.svg"
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <a href="/" className="navbar_logo"><img src={logo} alt="website logo"></img></a>
+            <Link to="/" className="navbar_logo"><img src={logo} alt="website logo"></img></Link>
             <ul className="navbar_list">
-                <a href="/" className="navbar_item">Home</a>
-                <a href="/work" className="navbar_item">Work</a>
-                <a href="/about" className="navbar_item">About</a>
-                <a href="/contact" className="navbar_item">Contact</a>
+                <Link to="/" className="navbar_item">Home</Link>
+                <Link to="/work" className="navbar_item">Work</Link>
+                <Link to="/about" className="navbar_item">About</Link>
+                <Link to="/contact" className="navbar_item">Contact</Link>
             </ul>
         </nav>
     )
