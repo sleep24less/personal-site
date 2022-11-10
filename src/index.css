@@ -166,6 +166,9 @@ code {
   --color-text-light: #7188a0;
   --color-accent: #430fff;
   --color-accent2: #eb0fff;
+  --color-logo: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  --color-png: hue-rotate(280deg);
+
 }
 
 :root.dark {
@@ -177,6 +180,8 @@ code {
   --color-text-light: #99a7b4;
   --color-accent: #eb0fff;
   --color-accent2: #430fff;
+  --color-logo: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%);
+  --color-png: hue-rotate(0deg);
 }
 
 #root {
@@ -251,8 +256,15 @@ i {
   width: auto;
 }
 
+.navbar_logo img {
+  filter: var(--color-png);
+}
+
 .navbar_logo {
-  height: 80%;
+  height: 60%;
+  padding: 3px;
+  background-image: var(--color-logo);
+  border-radius: 10px;
 }
 
 /* ______________________________________DARKMODE SWITCH_____________________ */
