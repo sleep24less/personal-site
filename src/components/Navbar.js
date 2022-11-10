@@ -8,6 +8,15 @@ export default function Navbar(props) {
 
     const [open, setOpen] = React.useState(false)
 
+    function handleChange(e) {
+        if (e.target.checked) {
+            document.querySelector(':root').classList.add('dark');
+        }
+        else {
+            document.querySelector(':root').classList.remove('dark');
+        }
+    }
+
     return (
         <nav className="container navbar">
             <Link to="/" className="navbar_logo"><img src={logo} alt="website logo"></img></Link>
@@ -24,6 +33,10 @@ export default function Navbar(props) {
                     </div>
                 </div >
             </ul >
+            <label class="switch">
+                <input type="checkbox" onChange={(e) => handleChange(e)}></input>
+                <span class="slider"></span>
+            </label>
         </nav >
     )
 }
