@@ -18,12 +18,12 @@ export default function Navbar(props) {
                 <div className="menu_container">
                     <li className="navbar_item menu_trigger" onClick={() => { setOpen(!open) }}>Contacts</li>
                     <div className={`dropdown ${open ? 'active' : 'inactive'}`}>
-                        <DropdownItem icon={<i class="contact_icon fa-brands fa-linkedin"></i>} link='https://www.linkedin.com/in/arnomanukian/' />
-                        <DropdownItem icon={<i class="contact_icon fa-brands fa-square-github"></i>} link='https://github.com/sleep24less' />
-                        <DropdownItem icon={<i class="contact_icon fa-solid fa-square-envelope"></i>} link='mailto:arnas.manucan@gmail.com' email={true} />
+                        <DropdownItem icon={<i className="contact_icon fa-brands fa-linkedin" ></i>} link='https://www.linkedin.com/in/arnomanukian/' />
+                        <DropdownItem icon={<i className="contact_icon fa-brands fa-square-github" ></i>} link='https://github.com/sleep24less' />
+                        <DropdownItem icon={<i className="contact_icon fa-solid fa-square-envelope" ></i>} link='mailto:arnas.manucan@gmail.com' />
                     </div>
-                </div>
-            </ul>
-        </nav>
+                </div >
+            </ul >
+        </nav >
     )
 }

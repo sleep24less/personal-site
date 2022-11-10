@@ -5,8 +5,8 @@ function DropdownItem(props) {
         <li className='dropdown_item'>
             <a
                 href={props.link}
-                target={!props.email && '_blank'}
-                rel={!props.email && 'noreferrer'}
+                target='_blank'
+                rel='noreferrer'
                 className='dropdown_link'>{props.icon}</a>
         </li>
     )
