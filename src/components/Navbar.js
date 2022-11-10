@@ -33,10 +33,10 @@ export default function Navbar(props) {
                     </div>
                 </div >
             </ul >
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox" onChange={(e) => handleChange(e)}></input>
-                <span class="slider"></span>
-            </label>
+                <span className="slider"></span>
+            </label >
         </nav >
     )
 }
