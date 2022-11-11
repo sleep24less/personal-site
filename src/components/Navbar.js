@@ -25,8 +25,10 @@ export default function Navbar(props) {
                 <Link to="/work" className="navbar_item">Work</Link>
                 <Link to="/about" className="navbar_item">About</Link>
                 <div className="menu_container">
-                    <li className="navbar_item menu_trigger" onClick={() => { setOpen(!open) }}>Contacts</li>
-                    <div className={`dropdown ${open ? 'active' : 'inactive'}`}>
+                    <li className="navbar_item menu_trigger" onMouseEnter={() => setOpen(true)}
+                        onMouseLeave={() => setOpen(false)}>Contacts</li>
+                    <div className={`dropdown ${open ? 'active' : 'inactive'}`} onMouseEnter={() => setOpen(true)}
+                        onMouseLeave={() => setOpen(false)}>
                         <DropdownItem icon={<i className="contact_icon fa-brands fa-linkedin" ></i>} link='https://www.linkedin.com/in/arnomanukian/' />
                         <DropdownItem icon={<i className="contact_icon fa-brands fa-square-github" ></i>} link='https://github.com/sleep24less' />
                         <DropdownItem icon={<i className="contact_icon fa-solid fa-square-envelope" ></i>} link='mailto:arnas.manucan@gmail.com' />

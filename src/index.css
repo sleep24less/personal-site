@@ -167,7 +167,6 @@ code {
   --color-accent: #430fff;
   --color-accent2: #eb0fff;
   --color-logo: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-  --logo-shadow: none;
   --color-png: hue-rotate(280deg);
 
 }
@@ -207,6 +206,10 @@ i {
   margin-right: 10px;
   color: var(--color-text-secondary);
   font-size: inherit;
+}
+
+b {
+  font-weight: 600;
 }
 
 .container {
@@ -417,4 +420,87 @@ input:checked+.slider:before {
   font-weight: 500;
   color: var(--color-text-primary);
   margin-bottom: 25px;
+}
+
+.main .section_info {
+  margin-top: 100px;
+}
+
+/* SCROLL DOWN ANIMATION */
+
+.scroll_animation {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  scale: 1;
+}
+
+.arrows path {
+  stroke: var(--color-text-primary);
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 3s infinite;
+  -webkit-animation: arrow 3s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
 }
