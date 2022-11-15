@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/personal-site/#",
+  "homepage": "https://sleep24less.github.io/personal-site",
   "dependencies": {
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.9",
