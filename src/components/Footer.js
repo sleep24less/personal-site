@@ -26,7 +26,7 @@ function Footer() {
                     </script>
                     Arno Manukian
                 </p>
-                <a href="https://github.com/rektjesus" target="_blank">
+                <a href="https://github.com/rektjesus" target="_blank" rel='noreferrer'>
                     <i className="fab fa-github"></i>
                 </a>
             </div>
