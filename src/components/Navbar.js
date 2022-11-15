@@ -28,7 +28,8 @@ export default function Navbar(props) {
                     <li
                         className="navbar_item menu_trigger"
                         onMouseEnter={() => setOpen(true)}
-                        onMouseLeave={() => setOpen(false)}>
+                        onMouseLeave={() => setOpen(false)}
+                        onClick={() => setOpen(!open)}>
                         Contacts</li>
                     <div
                         className={`dropdown ${open ? 'active' : 'inactive'}`} onMouseEnter={() => setOpen(true)}
