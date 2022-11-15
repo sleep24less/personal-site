@@ -6,8 +6,10 @@ import DropdownItem from "./DropdownItem"
 
 export default function Navbar(props) {
 
+    // useState for dropdown menu to open and close //
     const [open, setOpen] = React.useState(false)
 
+    // function for dark/light mode toggle //
     function handleChange(e) {
         if (e.target.checked) {
             document.querySelector(':root').classList.add('dark');

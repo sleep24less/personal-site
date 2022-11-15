@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 
 
 export default function Home() {
+    // Initialization for animate on scroll effects//
     React.useEffect(() => {
         Aos.init({ duration: 1000 })
     }, [])
