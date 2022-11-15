@@ -10,7 +10,7 @@ export default function About() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
         >
-            <h1 className='text_section'><i class="fa-solid fa-circle-user"></i> About me</h1>
+            <h1 className='text_section'><i className="fa-solid fa-circle-user"></i> About me</h1>
         </motion.div>
 
     )

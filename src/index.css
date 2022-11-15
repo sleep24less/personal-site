@@ -604,3 +604,51 @@ input:checked+.slider:before {
   transform: rotate(360deg) scale(1.2);
   color: var(--color-accent)
 }
+
+/* __________________________________MOBILE__________________________________ */
+
+@media only screen and (max-width: 768px) {
+
+  body,
+  html {
+    max-width: 768px;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .main.container {
+    padding: 25px;
+  }
+
+  .navbar .navbar_logo {
+    margin-left: 20px;
+  }
+
+  .navbar_list {
+    gap: 10px;
+  }
+
+  .navbar_item {
+    font-size: 0.8rem;
+  }
+
+  .dropdown {
+    width: 60px;
+    left: 0px;
+  }
+
+  .footer_logo img {
+    width: 100%;
+  }
+
+  .scroll_animation {
+    display: none;
+  }
+
+  .main .section_info {
+    margin-top: 50px;
+  }
+}
