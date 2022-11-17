@@ -724,4 +724,10 @@ input:checked+.slider:before {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
+
+  .grid_item {
+    height: 100%;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
 }
