@@ -514,6 +514,75 @@ input:checked+.slider:before {
   /* Safari 和 Chrome */
 }
 
+/* ____________________________________WORK SECTION__________________________ */
+
+.grid {
+  display: grid;
+  align-self: center;
+  max-width: 88vw;
+  grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+  column-gap: 50px;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+
+.grid_item {
+  width: 100%;
+  height: 430px;
+}
+
+.project_card {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.project_img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+}
+
+.project_img:hover {
+  scale: 1.1;
+  filter: brightness(0.9);
+}
+
+.project_title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.project_title a {
+  font-weight: 500;
+  color: var(--color-text-light);
+  margin-left: 0.5rem;
+}
+
+.project_title a:hover {
+  color: var(--color-accent);
+}
+
+.project_title i.fab.fa-github {
+  margin-right: 0.3rem;
+}
+
+.project_title .fa-github {
+  color: var(--color-text-light);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project_title .fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+  color: var(--color-accent)
+}
+
 /* ____________________________________FOOTER________________________________ */
 
 .footer {
@@ -650,5 +719,9 @@ input:checked+.slider:before {
 
   .main .section_info {
     margin-top: 50px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 }

@@ -5,6 +5,8 @@ import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
 
 
+// DON'T FORGET TO ADD SCROLL TO TOP FEATURE ON LINKS INSIDE TEXT OR FOOTER//
+
 export default function Home() {
     // Initialization for animate on scroll effects//
     React.useEffect(() => {

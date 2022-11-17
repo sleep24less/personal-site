@@ -3,6 +3,8 @@ import logo from "../assets/logo.svg"
 import { Link } from 'react-router-dom'
 import DropdownItem from './DropdownItem'
 
+// DON'T FORGET TO ADD SCROLL TO TOP FEATURE ON LINKS INSIDE TEXT OR FOOTER//
+
 function Footer() {
     return (
         <footer className='container footer'>
