@@ -22,11 +22,7 @@ function Footer() {
                 </div>
             </div>
             <div className='footer_bottom'>
-                <p>Copyright @
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    Arno Manukian
+                <p>Copyright @ {(new Date().getFullYear())} Arno Manukian
                 </p>
                 <a href="https://github.com/rektjesus" target="_blank" rel='noreferrer'>
                     <i className="fab fa-github"></i>
