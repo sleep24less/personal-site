@@ -4,6 +4,13 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
 
+import icon1 from '../assets/code.png'
+import icon2 from '../assets/home.png'
+import icon3 from '../assets/sent.png'
+import homeImg1 from '../assets/homeImg1.png'
+import homeImg2 from '../assets/homeImg2.png'
+
+
 
 // DON'T FORGET TO ADD SCROLL TO TOP FEATURE ON LINKS INSIDE TEXT OR FOOTER//
 
@@ -22,7 +29,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
         >
             <h1 className='text_title'>Hello, I am Arno!</h1>
-            <h1 className='text_intro'>I am a self-taught front-end developer, who is motivated to start his career in the industry.</h1>
+            <h1 className='text_intro'>And this is my personal website to showcase my work and who I am.</h1>
             <p className="text">I used to be an architect with a masters degree, which has given me a deep understanding in design, composition and most importantly hard-work. Although I decided to change my profession, my studies and work in architecture made me <Link to='/about'>who I am today</Link>.
             </p>
             <p className='text'>Pursuing a different profession was a hard decision to make, but I'm very glad that I did. Programming has become a passion of mine which in turn gave me a lot of motivation and determination to learn everyday. I look at myself now as a sponge, I am tirelessly driven to seek and absorb new information. </p>
@@ -35,9 +42,47 @@ export default function Home() {
                 </svg>
             </div>
             <div className='section_info'>
-                <h1 data-aos='fade-left' className='text_section'><i className="fa-solid fa-laptop-code"></i> My work</h1>
-                <p data-aos='fade-right' className='text'>All of my projects are were made while learning on a free programming course called <a href='https://www.theodinproject.com/' target='_blank' rel='noreferrer'>The Odin Project</a>. I learned new things everyday and progressed my knowledge with each project I did.</p>
-                <p data-aos='fade-left' className='text'>My favorite part about these projects - there was no leading by the hand. Every given project there was a description on how it should look like and work, some hints and a suggestion to "use Google" to figure things out. You can check them out <Link to='/work'>here!</Link></p>
+                <div data-aos='fade-down'>
+                    <img src={icon1} className='header_icon' alt=''></img>
+                    <h1 className='text_section'>My work</h1>
+                    <p className='text'>All of my projects are were made while learning on a free programming course called <a href='https://www.theodinproject.com/' target='_blank' rel='noreferrer'>The Odin Project</a>. I learned new things everyday and progressed my knowledge with each project I did.</p>
+                    <p className='text'>My favorite part about these projects - there was no leading by the hand. Every given project there had a description on how it should work, some hints and a suggestion to "use Google" to figure things out.</p>
+                </div>
+                <div className='section_container about_work'>
+                    <div data-aos='fade-right' className='left_section'>
+                        <p className='text'><i className="fab fa-github"></i> sleep24less/personal-site</p>
+                        <p className='text'><i className="fab fa-github"></i> sleep24less/library</p>
+                        <p className='text'><i className="fab fa-github"></i> sleep24less/tenzies-game</p>
+                        <p className='text'><i className="fab fa-github"></i> sleep24less/calculator</p>
+                        <p className='text'><i className="fab fa-github"></i> sleep24less/rock-paper-scissors</p>
+                        <p className='text'><i className="fab fa-github"></i> sleep24less/etch-a-sketch</p>
+                        <Link to='/work' className='work_button'>See my work</Link>
+                    </div>
+                    <div data-aos='fade-left' className='right_section'>
+                        <img src={homeImg1} className='home_img' alt='lines of code'></img>
+                    </div>
+                </div>
+            </div>
+            <div data-aos='fade-down' className='section_info'>
+                <img src={icon2} className='header_icon' alt=''></img>
+                <h1 className='text_section'>Architecture</h1>
+                <p className='text'>Architecture did take up a big part of my life and taught me a lot of valuable skills.
+                    So I thought I should share some of my architecture and interior projects on this website.</p>
+                <p className='text'>If you are interested to see some cool 3D visualizations and not so cool technical building plans and sections, click the button below!</p>
+                <div className='section_container about_architecture'>
+                    <div data-aos='fade-right' className='left_section'>
+                        <img src={homeImg2} className='home_img2' alt='lines of code'></img>
+                    </div>
+                    <div data-aos='fade-left' className='right_section'>
+                        <a href='https://heyzine.com/flip-book/480493dc44.html' target='_blank' rel='noreferrer' className='work_button'>See my architecture</a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos='fade-down' className='section_info'>
+                <img src={icon3} className='header_icon' alt=''></img>
+                <h1 className='text_section'>Get in Touch</h1>
+                <p className='text'>I am currently open for job opportunities. You can view my <a href='https://www.linkedin.com/in/arnomanukian/' target='_blank' rel='noreferrer'>LinkedIn</a> profile or download my resume. You can also find all of my code on my <a href='https://github.com/sleep24less' target='_blank' rel='noreferrer'>GitHub</a>.</p>
+                <p className='text'>If you want to contact me, you're welcome to send an <a href="mailto:arnas.manucan@gmail.com" target="_blank" rel="noreferrer">Email</a> to <b>arnas.manucan@gmail.com</b> .</p>
             </div>
         </motion.div>
 
