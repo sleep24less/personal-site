@@ -42,7 +42,7 @@ export default function Home() {
                 </svg>
             </div>
             <div className='section_info'>
-                <div data-aos='fade-down'>
+                <div data-aos='fade-right'>
                     <img src={icon1} className='header_icon' alt=''></img>
                     <h1 className='text_section'>My work</h1>
                     <p className='text'>All of my projects are were made while learning on a free programming course called <a href='https://www.theodinproject.com/' target='_blank' rel='noreferrer'>The Odin Project</a>. I learned new things everyday and progressed my knowledge with each project I did.</p>
@@ -63,22 +63,24 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div data-aos='fade-down' className='section_info'>
-                <img src={icon2} className='header_icon' alt=''></img>
-                <h1 className='text_section'>Architecture</h1>
-                <p className='text'>Architecture did take up a big part of my life and taught me a lot of valuable skills.
-                    So I thought I should share some of my architecture and interior projects on this website.</p>
-                <p className='text'>If you are interested to see some cool 3D visualizations and not so cool technical building plans and sections, click the button below!</p>
+            <div className='section_info'>
+                <div data-aos='fade-left'>
+                    <img src={icon2} className='header_icon' alt=''></img>
+                    <h1 className='text_section'>Architecture</h1>
+                    <p className='text'>Architecture did take up a big part of my life and taught me a lot of valuable skills.
+                        So I thought I should share some of my architecture and interior projects on this website.</p>
+                    <p className='text'>If you are interested to see some cool 3D visualizations and not so cool technical building plans and sections, click the button below!</p>
+                </div>
                 <div className='section_container about_architecture'>
-                    <div data-aos='fade-right' className='left_section'>
+                    <div data-aos='fade-down' className='left_section'>
                         <img src={homeImg2} className='home_img2' alt='lines of code'></img>
                     </div>
-                    <div data-aos='fade-left' className='right_section'>
+                    <div data-aos='fade-up' className='right_section'>
                         <a href='https://heyzine.com/flip-book/480493dc44.html' target='_blank' rel='noreferrer' className='work_button'>See my architecture</a>
                     </div>
                 </div>
             </div>
-            <div data-aos='fade-down' className='section_info'>
+            <div data-aos='fade-right' className='section_info'>
                 <img src={icon3} className='header_icon' alt=''></img>
                 <h1 className='text_section'>Get in Touch</h1>
                 <p className='text'>I am currently open for job opportunities. You can view my <a href='https://www.linkedin.com/in/arnomanukian/' target='_blank' rel='noreferrer'>LinkedIn</a> profile or download my resume. You can also find all of my code on my <a href='https://github.com/sleep24less' target='_blank' rel='noreferrer'>GitHub</a>.</p>

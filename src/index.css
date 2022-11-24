@@ -535,19 +535,49 @@ input:checked+.slider:before {
 }
 
 .resume_button {
-  padding: 5px 0;
-  width: 200px;
+  padding: 7px 0;
+  width: 150px;
   text-align: center;
   background-color: var(--color-accent);
   color: #ffffff;
+  font-size: 0.94rem;
   border-radius: 10px;
-  box-shadow: 0 0 0 1px rgb(0 0 0 / 16%), 0 1px 3px rgb(0 0 0 / 8%), inset 0 1px 0 hsl(0deg 0% 100% / 21%);
 }
 
 .resume_button:hover {
   background-color: var(--color-accent2);
   color: #ffffff;
 }
+
+.about_stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 40px;
+  color: var(--color-text-light);
+}
+
+.about_stats_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_stats_item i {
+  font-size: 1rem;
+}
+
+.profile_picture {
+  border-radius: 16px;
+  margin: 40px 0;
+}
+
+.about .text {
+  margin-bottom: 40px;
+}
+
 
 /* SCROLL DOWN ANIMATION */
 
@@ -921,5 +951,15 @@ input:checked+.slider:before {
     text-align: center;
     font-size: 0.8rem;
     margin-bottom: 10px;
+  }
+
+  .about_stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.80rem;
+    font-weight: 500;
+    margin-top: 40px;
+    color: var(--color-text-light);
   }
 }
