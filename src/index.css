@@ -879,7 +879,8 @@ input:checked+.slider:before {
   }
 
   .grid_item {
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
     font-size: 0.95rem;
   }
