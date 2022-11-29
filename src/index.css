@@ -476,6 +476,10 @@ input:checked+.slider:before {
   margin: 0;
 }
 
+.about .text.last {
+  margin: 0;
+}
+
 /*_____________________________________________________ SCROLL DOWN ANIMATION */
 
 .scroll_animation {
@@ -562,13 +566,25 @@ input:checked+.slider:before {
   flex-direction: column;
 }
 
+.aos_container.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_section.skills {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .info.skills .text_intro {
-  font-size: 1.7rem;
-  width: 450px;
+  font-size: 2rem;
+  width: 500px;
   align-self: center;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 70px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .skill {
@@ -1147,7 +1163,7 @@ input:checked+.slider:before {
   .info.skills .text_intro {
     font-size: 1.4rem;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 0px;
     margin-bottom: 20px;
   }
 
@@ -1158,5 +1174,9 @@ input:checked+.slider:before {
 
   .skill[data-aos] {
     transform: translate3d(-100px, 0, 0);
+  }
+
+  .text.last {
+    margin: 0;
   }
 }

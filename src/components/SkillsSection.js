@@ -2,8 +2,6 @@ import React from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import icon4 from '../assets/mouse.png'
-
 function SkillsSection() {
 
     // Initialization for animate on scroll effects//
@@ -14,9 +12,8 @@ function SkillsSection() {
     return (
         <div className='section_info'>
             <div className='info skills'>
-                <div data-aos='fade-right'>
-                    <img src={icon4} className='header_icon' alt=''></img>
-                    <h1 className='text_section'>My skills</h1>
+                <div className='aos_container skills' data-aos='fade-right'>
+                    <h1 className='text_section skills'>SKILLS</h1>
                 </div>
                 <h1 className='text_intro' data-aos='fade-left'>Developer that solves problems, one line at a time.</h1>
                 <div className='skills_container'>
