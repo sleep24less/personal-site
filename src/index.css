@@ -135,6 +135,10 @@ table {
   box-sizing: border-box;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 html {
   background-color: var(--color-bg);
   height: -webkit-fill-available;

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 
 import icon1 from '../assets/code.png'
 import icon3 from '../assets/sent.png'
-import icon4 from '../assets/mouse.png'
 import homeImg1 from '../assets/homeImg1.png'
+import SkillsSection from './SkillsSection'
 
 
 
@@ -40,48 +40,7 @@ export default function Home() {
                     <path className="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg>
             </div>
-            <div className='section_info'>
-                <div className='info skills'>
-                    <div data-aos='fade-right'>
-                        <img src={icon4} className='header_icon' alt=''></img>
-                        <h1 className='text_section'>My skills</h1>
-                    </div>
-                    <h1 className='text_intro' data-aos='fade-left'>Developer that solves problems, one line at a time.</h1>
-                    <div className='skills_container'>
-                        <div className='skill' data-aos='fade-down' data-aos-delay="0">
-                            <i className="fa-solid fa-handshake skill_icon"></i>
-                            <h1 className='skill_intro'>What I can do for you</h1>
-                            <p className='text'>Faster, better products that your users love. Here are some qualities I bring:</p>
-                            <ul className='skill_list'>
-                                <li className='text list_item'>Deliver a great user experience</li>
-                                <li className='text list_item'>Promote a growth mindset</li>
-                                <li className='text list_item'>Work with agile processes</li>
-                            </ul>
-                        </div>
-                        <div className='skill' data-aos='fade-down' data-aos-delay="300">
-                            <i className="fa-solid fa-shapes skill_icon"></i>
-                            <h1 className='skill_intro'>Things I'm skilled in</h1>
-                            <p className='text'>Every developer needs the right tools to do the perfect job. Thankfully, I'm multilingual:</p>
-                            <ul className='skill_list'>
-                                <li className='text list_item'>React.js</li>
-                                <li className='text list_item'>HTML5, CSS3, JS</li>
-                                <li className='text list_item'>Knowledge of REST API</li>
-                                <li className='text list_item'>Git versioning system</li>
-                            </ul>
-                        </div>
-                        <div className='skill' data-aos='fade-down' data-aos-delay="600">
-                            <i className="fa-solid fa-user-tie skill_icon"></i>
-                            <h1 className='skill_intro'>What can you expect</h1>
-                            <p className='text'>I have a strong motivation for web development. I'm always fully dedicated to what I do:</p>
-                            <ul className='skill_list'>
-                                <li className='text list_item'>Clean and functional code</li>
-                                <li className='text list_item'>MVP-focused coding mindset</li>
-                                <li className='text list_item'>A strong team-player</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <SkillsSection />
             <div className='section_info'>
                 <div className='info' data-aos='fade-right'>
                     <img src={icon1} className='header_icon' alt=''></img>
