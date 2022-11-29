@@ -173,6 +173,7 @@ code {
   --color-accent4: #ff6f5b;
   --color-logo: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
   --color-png: hue-rotate(280deg);
+  --gradient-accent: linear-gradient(220deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
 
 }
 
@@ -190,6 +191,7 @@ code {
   --color-accent4: #ff6f5b;
   --color-logo: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgb(19, 61, 110) 79.4%);
   --color-png: hue-rotate(0deg);
+  --gradient-accent: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
 }
 
 #root {
@@ -253,7 +255,7 @@ b {
   gap: 20px;
   margin-left: auto;
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .navbar_item {
@@ -419,16 +421,21 @@ input:checked+.slider:before {
   color: var(--color-text-primary);
 }
 
+.main .section_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
 .header_icon {
-  opacity: 0.6;
   height: auto;
   width: 4rem;
   margin-bottom: 20px;
 }
 
 .text_title {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 400;
   margin-bottom: 50px;
 }
 
@@ -437,9 +444,20 @@ input:checked+.slider:before {
   margin-bottom: 50px;
 }
 
+.text_intro.home {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
 .text {
   color: var(--color-text-secondary);
   margin-bottom: 25px;
+}
+
+.text_gradient {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text_section {
@@ -448,6 +466,150 @@ input:checked+.slider:before {
   color: var(--color-text-primary);
   margin-bottom: 25px;
   margin-top: 10px;
+}
+
+.text.last {
+  margin: 0;
+}
+
+/*_____________________________________________________ SCROLL DOWN ANIMATION */
+
+.scroll_animation {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60%;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  scale: 1;
+}
+
+.arrows path {
+  stroke: var(--color-text-primary);
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 3s infinite;
+  -webkit-animation: arrow 3s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
+}
+
+/* _____________________________________________________SKILL SECTION________ */
+
+.info.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.info.skills .text_intro {
+  font-size: 1.7rem;
+  width: 450px;
+  align-self: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 28%;
+}
+
+.skill_icon {
+  font-size: 2.5rem;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+  margin-right: 0;
+  width: 50px;
+}
+
+.skill_intro {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.skill_list {
+  list-style: circle;
+}
+
+.list_item {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.skills_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: center;
+  justify-self: center;
+  width: 1000px;
 }
 
 /*_________________________________________ Colored container in MAIN section */
@@ -496,12 +658,6 @@ input:checked+.slider:before {
 .work_button:hover {
   background-color: #635bff;
   color: #ffffff;
-}
-
-.main .section_info {
-  display: flex;
-  flex-direction: column;
-  margin-top: 80px;
 }
 
 .section_container.about_architecture {
@@ -586,125 +742,11 @@ input:checked+.slider:before {
   margin-bottom: 40px;
 }
 
-/* _____________________________________________________SKILL SECTION________ */
-
-.text.last {
-  margin-bottom: 0;
+.about .text.list_item {
+  margin-bottom: 15px;
 }
 
-.skills {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
 
-.skill_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.skill {
-  background-color: var(--color-accent3);
-  width: 80%;
-  height: 15px;
-  border-radius: 1rem;
-}
-
-.skill_name {
-  font-size: 1rem;
-  color: var(--color-text-secondary);
-  font-weight: 500;
-}
-
-.bar {
-  float: left;
-  height: 15px;
-  border-radius: 1rem;
-  background-color: var(--color-accent);
-}
-
-/*_____________________________________________________ SCROLL DOWN ANIMATION */
-
-.scroll_animation {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 60%;
-}
-
-.arrows {
-  width: 60px;
-  height: 72px;
-  scale: 1;
-}
-
-.arrows path {
-  stroke: var(--color-text-primary);
-  fill: transparent;
-  stroke-width: 2px;
-  animation: arrow 3s infinite;
-  -webkit-animation: arrow 3s infinite;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 0
-  }
-
-  40% {
-    opacity: 1
-  }
-
-  80% {
-    opacity: 0
-  }
-
-  100% {
-    opacity: 0
-  }
-}
-
-@-webkit-keyframes arrow
-
-/*Safari and Chrome*/
-  {
-  0% {
-    opacity: 0
-  }
-
-  40% {
-    opacity: 1
-  }
-
-  80% {
-    opacity: 0
-  }
-
-  100% {
-    opacity: 0
-  }
-}
-
-.arrows path.a1 {
-  animation-delay: -1s;
-  -webkit-animation-delay: -1s;
-  /* Safari 和 Chrome */
-}
-
-.arrows path.a2 {
-  animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s;
-  /* Safari 和 Chrome */
-}
-
-.arrows path.a3 {
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-  /* Safari 和 Chrome */
-}
 
 /* ____________________________________WORK SECTION__________________________ */
 
@@ -1077,15 +1119,40 @@ input:checked+.slider:before {
   .skill_container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    width: 100%;
+  }
+
+  .skills_container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .skills .text_intro {
+    font-size: 1.4rem;
     width: 100%;
   }
 
   .skill {
-    background-color: var(--color-accent3);
     width: 100%;
-    height: 15px;
-    border-radius: 1rem;
+  }
+
+  .skill_icon {
+    margin-top: 40px;
+  }
+
+  .info.skills .text_intro {
+    font-size: 1.4rem;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  /* Disable aos delay on mobile */
+  [data-aos-delay] {
+    transition-delay: 0ms !important;
+  }
+
+  .skill[data-aos] {
+    transform: translate3d(-100px, 0, 0);
   }
 }
