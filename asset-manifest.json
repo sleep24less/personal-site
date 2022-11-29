@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-site/static/css/main.53284808.css",
-    "main.js": "/personal-site/static/js/main.ab51044c.js",
+    "main.css": "/personal-site/static/css/main.9395f125.css",
+    "main.js": "/personal-site/static/js/main.28f81d12.js",
     "static/js/787.3ba5e41c.chunk.js": "/personal-site/static/js/787.3ba5e41c.chunk.js",
     "static/media/arno_manukian_cv.pdf": "/personal-site/static/media/arno_manukian_cv.e083918bca4d649e478c.pdf",
     "static/media/homeImg2.png": "/personal-site/static/media/homeImg2.3efb8f62a0b4a2b66d43.png",
@@ -19,12 +19,12 @@
     "static/media/homeImg1.png": "/personal-site/static/media/homeImg1.2f947c27554292dbad0a.png",
     "static/media/logo.svg": "/personal-site/static/media/logo.ff1a5986582aae4f6499f7100ac29761.svg",
     "index.html": "/personal-site/index.html",
-    "main.53284808.css.map": "/personal-site/static/css/main.53284808.css.map",
-    "main.ab51044c.js.map": "/personal-site/static/js/main.ab51044c.js.map",
+    "main.9395f125.css.map": "/personal-site/static/css/main.9395f125.css.map",
+    "main.28f81d12.js.map": "/personal-site/static/js/main.28f81d12.js.map",
     "787.3ba5e41c.chunk.js.map": "/personal-site/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53284808.css",
-    "static/js/main.ab51044c.js"
+    "static/css/main.9395f125.css",
+    "static/js/main.28f81d12.js"
   ]
 }
