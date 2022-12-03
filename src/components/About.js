@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import profilePicture from '../assets/profile_picture.jpg'
+import profilePicture from '../assets/profile_picture.png'
 import icon2 from '../assets/home.png'
 import icon3 from '../assets/sent.png'
 import homeImg2 from '../assets/homeImg2.png'
