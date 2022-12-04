@@ -16,7 +16,13 @@ import SkillsSection from './SkillsSection'
 export default function Home() {
     // Initialization for animate on scroll effects//
     React.useEffect(() => {
-        Aos.init({ duration: 1000 })
+        Aos.init({
+            duration: 1000,
+            disable: function () {
+                var maxWidth = 768;
+                return window.innerWidth < maxWidth;
+            }
+        })
     }, [])
 
     return (
