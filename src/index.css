@@ -145,8 +145,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   height: 100vh;
   height: -webkit-fill-available;
   line-height: 1.6;
@@ -216,11 +214,6 @@ a {
   transition: 0.5s ease;
 }
 
-a:hover {
-  color: var(--color-accent2);
-  transition: 0.5s ease;
-}
-
 i {
   margin-right: 10px;
   color: var(--color-text-secondary);
@@ -267,11 +260,6 @@ b {
   color: var(--color-text-secondary);
   font-weight: 500;
   transition: 0.2s ease;
-}
-
-.navbar_item:hover {
-  transition: 0.2s ease;
-  color: var(--color-accent);
 }
 
 .navbar_logo,
@@ -328,11 +316,6 @@ b {
   /* background-color: #f4f4f5; */
   transition: .5s;
   border-radius: 30px;
-}
-
-.slider:hover {
-  scale: 1.5;
-  transition: 0.2s;
 }
 
 .slider:before {
@@ -401,12 +384,6 @@ input:checked+.slider:before {
   margin: 0;
   font-size: 1.5rem;
   color: var(--color-text-light);
-}
-
-.dropdown i:hover {
-  scale: 1.2;
-  color: var(--color-accent);
-  transition: 0.2s ease;
 }
 
 .dropdown a {
@@ -675,11 +652,6 @@ input:checked+.slider:before {
   box-shadow: 0 0 0 1px rgb(0 0 0 / 16%), 0 1px 3px rgb(0 0 0 / 8%), inset 0 1px 0 hsl(0deg 0% 100% / 21%);
 }
 
-.work_button:hover {
-  background-color: #635bff;
-  color: #ffffff;
-}
-
 .section_container.about_architecture {
   display: flex;
   flex-direction: column;
@@ -702,10 +674,6 @@ input:checked+.slider:before {
   background-color: #635bff;
 }
 
-.section_container.about_architecture .work_button:hover {
-  background-color: var(--color-accent4);
-}
-
 /*_________________________________________________ ABOUT TAB in MAIN section */
 
 .container.main.about {
@@ -726,11 +694,6 @@ input:checked+.slider:before {
   color: #ffffff;
   font-size: 0.94rem;
   border-radius: 10px;
-}
-
-.resume_button:hover {
-  background-color: var(--color-accent2);
-  color: #ffffff;
 }
 
 .about_stats {
@@ -800,11 +763,6 @@ input:checked+.slider:before {
   transition: all .5s;
 }
 
-.project_img:hover {
-  scale: 1.1;
-  filter: brightness(0.9);
-}
-
 .project_title {
   display: flex;
   justify-content: space-between;
@@ -818,10 +776,6 @@ input:checked+.slider:before {
   margin-left: 0.5rem;
 }
 
-.project_title a:hover {
-  color: var(--color-accent);
-}
-
 .project_title i.fab.fa-github {
   margin-right: 0.3rem;
 }
@@ -830,11 +784,6 @@ input:checked+.slider:before {
   color: var(--color-text-light);
   font-size: 1.2rem;
   transition: transform 0.3s ease-in-out;
-}
-
-.project_title .fa-github:hover {
-  transform: rotate(360deg) scale(1.2);
-  color: var(--color-accent)
 }
 
 /* ____________________________________FOOTER________________________________ */
@@ -902,12 +851,6 @@ input:checked+.slider:before {
   color: var(--color-text-light);
 }
 
-.footer_icons i:hover {
-  scale: 1.2;
-  color: var(--color-accent);
-  transition: 0.2s ease;
-}
-
 .footer_bottom {
   display: flex;
   height: 48px;
@@ -921,11 +864,6 @@ input:checked+.slider:before {
   font-size: 1rem;
   transition: transform 0.3s ease-in-out;
   margin-left: 10px;
-}
-
-.footer .fa-github:hover {
-  transform: rotate(360deg) scale(1.2);
-  color: var(--color-accent)
 }
 
 /* __________________________________MOBILE__________________________________ */
@@ -1109,11 +1047,6 @@ input:checked+.slider:before {
     border-radius: 30px;
   }
 
-  .slider:hover {
-    scale: none;
-    transition: none;
-  }
-
   .slider:before {
     position: absolute;
     content: "";
@@ -1178,5 +1111,74 @@ input:checked+.slider:before {
 
   .text.last {
     margin: 0;
+  }
+}
+
+/* Hover only works on devices with hover capability */
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-accent2);
+    transition: 0.5s ease;
+  }
+
+  .navbar_item:hover {
+    transition: 0.2s ease;
+    color: var(--color-accent);
+  }
+
+  .slider:hover {
+    scale: 1.5;
+    transition: 0.2s;
+  }
+
+  .dropdown i:hover {
+    scale: 1.2;
+    color: var(--color-accent);
+    transition: 0.2s ease;
+  }
+
+  .work_button:hover {
+    background-color: #635bff;
+    color: #ffffff;
+  }
+
+  .section_container.about_architecture .work_button:hover {
+    background-color: var(--color-accent4);
+  }
+
+  .resume_button:hover {
+    background-color: var(--color-accent2);
+    color: #ffffff;
+  }
+
+  .project_img:hover {
+    scale: 1.1;
+    filter: brightness(0.9);
+  }
+
+  .project_title a:hover {
+    color: var(--color-accent);
+  }
+
+  .project_title .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+    color: var(--color-accent)
+  }
+
+  .footer_icons i:hover {
+    scale: 1.2;
+    color: var(--color-accent);
+    transition: 0.2s ease;
+  }
+
+  .footer .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+    color: var(--color-accent)
+  }
+
+  .slider:hover {
+    scale: none;
+    transition: none;
   }
 }

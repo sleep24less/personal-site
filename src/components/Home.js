@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             <SkillsSection />
             <div className='section_info'>
-                <div className='info' data-aos='fade-right'>
+                <div className='info' data-aos='fade-up'>
                     <img src={icon1} className='header_icon' alt=''></img>
                     <h1 className='text_section'>My work</h1>
                     <p className='text'>All of my projects are were made while learning on a free programming course called <a href='https://www.theodinproject.com/' target='_blank' rel='noreferrer'>The Odin Project</a>. I learned new things everyday and progressed my knowledge with each project I did.</p>
@@ -63,7 +63,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div data-aos='fade-right' className='section_info'>
+            <div data-aos='fade-up' className='section_info'>
                 <img src={icon3} className='header_icon' alt=''></img>
                 <h1 className='text_section'>Get in Touch</h1>
                 <p className='text'>I am currently open for job opportunities as a Front-End/React Developer. You can view my <a href='https://www.linkedin.com/in/arnomanukian/' target='_blank' rel='noreferrer'>LinkedIn</a> profile or download my resume. You can also find all of my code on my <a href='https://github.com/sleep24less' target='_blank' rel='noreferrer'>GitHub</a>.</p>
