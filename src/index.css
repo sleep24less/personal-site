@@ -145,6 +145,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   height: -webkit-fill-available;
   line-height: 1.6;
@@ -336,58 +338,6 @@ input:checked+.slider:before {
   /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
   box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   transition: .5s;
-}
-
-/* ______________________________________DROPDOWN____________________________ */
-
-.menu_container {
-  position: relative;
-}
-
-.menu_trigger {
-  background-color: var(--color-bg);
-  position: relative;
-  cursor: pointer;
-  padding-bottom: 5px;
-  z-index: 1;
-  transition: 0.2s ease;
-}
-
-.dropdown {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 91px;
-  top: 0px;
-  left: -8px;
-  padding-top: 30px;
-  overflow: hidden;
-}
-
-.dropdown.active {
-  position: absolute;
-  height: 150px;
-  visibility: visible;
-  transition: 0.3s ease;
-}
-
-.dropdown.inactive {
-  position: absolute;
-  height: 0;
-  visibility: hidden;
-  transition: 0.3s ease;
-}
-
-.dropdown i {
-  margin: 0;
-  font-size: 1.5rem;
-  color: var(--color-text-light);
-}
-
-.dropdown a {
-  transition: 0s;
 }
 
 /* _______________________________________MAIN_______________________________ */
@@ -712,10 +662,6 @@ input:checked+.slider:before {
   align-items: center;
 }
 
-.about_stats_item i {
-  font-size: 1rem;
-}
-
 .profile_picture {
   border-radius: 16px;
   margin: 40px 0;
@@ -894,11 +840,6 @@ input:checked+.slider:before {
 
   .navbar_item {
     font-size: 0.8rem;
-  }
-
-  .dropdown {
-    width: 60px;
-    left: 0px;
   }
 
   .footer_logo img {
@@ -1130,12 +1071,6 @@ input:checked+.slider:before {
   .slider:hover {
     scale: 1.5;
     transition: 0.2s;
-  }
-
-  .dropdown i:hover {
-    scale: 1.2;
-    color: var(--color-accent);
-    transition: 0.2s ease;
   }
 
   .work_button:hover {
