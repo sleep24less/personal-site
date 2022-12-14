@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-site/static/css/main.78974c3f.css",
-    "main.js": "/personal-site/static/js/main.5bead6ee.js",
+    "main.css": "/personal-site/static/css/main.3b0ec491.css",
+    "main.js": "/personal-site/static/js/main.5cd90393.js",
     "static/js/787.3ba5e41c.chunk.js": "/personal-site/static/js/787.3ba5e41c.chunk.js",
     "static/media/homeImg2.png": "/personal-site/static/media/homeImg2.3efb8f62a0b4a2b66d43.png",
     "static/media/profile_picture.jpg": "/personal-site/static/media/profile_picture.50162074906c7e2f3c1b.jpg",
@@ -11,19 +11,19 @@
     "static/media/project2.png": "/personal-site/static/media/project2.30f10f16310ff668da0d.png",
     "static/media/project3.png": "/personal-site/static/media/project3.06f0f98372faa4f97bae.png",
     "static/media/project4.png": "/personal-site/static/media/project4.d10dd0db15ab74bfac8b.png",
-    "static/media/arno_manukian_cv.pdf": "/personal-site/static/media/arno_manukian_cv.79212dec25e339703d8b.pdf",
+    "static/media/arno_manukian_cv.pdf": "/personal-site/static/media/arno_manukian_cv.667aeece52c4ff0d2c39.pdf",
     "static/media/sent.png": "/personal-site/static/media/sent.e74cf2334c38800dfc2c.png",
     "static/media/home.png": "/personal-site/static/media/home.ac914b3b1bf8a6e2be7a.png",
     "static/media/code.png": "/personal-site/static/media/code.edbed3fcd915df9c8273.png",
-    "static/media/homeImg1.png": "/personal-site/static/media/homeImg1.2f947c27554292dbad0a.png",
-    "static/media/logo.svg": "/personal-site/static/media/logo.ff1a5986582aae4f6499f7100ac29761.svg",
+    "static/media/logo.png": "/personal-site/static/media/logo.3c3057bdd06b89aa721b.png",
+    "static/media/homeImg1.png": "/personal-site/static/media/homeImg1.94005e00113609cf78ca.png",
     "index.html": "/personal-site/index.html",
-    "main.78974c3f.css.map": "/personal-site/static/css/main.78974c3f.css.map",
-    "main.5bead6ee.js.map": "/personal-site/static/js/main.5bead6ee.js.map",
+    "main.3b0ec491.css.map": "/personal-site/static/css/main.3b0ec491.css.map",
+    "main.5cd90393.js.map": "/personal-site/static/js/main.5cd90393.js.map",
     "787.3ba5e41c.chunk.js.map": "/personal-site/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78974c3f.css",
-    "static/js/main.5bead6ee.js"
+    "static/css/main.3b0ec491.css",
+    "static/js/main.5cd90393.js"
   ]
 }
