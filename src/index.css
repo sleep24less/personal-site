@@ -693,6 +693,7 @@ input:checked+.slider:before {
 
 .footer_logo img {
   filter: var(--color-png);
+  width: 100%;
 }
 
 .footer_list {

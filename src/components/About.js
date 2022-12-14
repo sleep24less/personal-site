@@ -49,8 +49,8 @@ export default function About() {
                 </div>
             </div>
             <img src={profilePicture} alt='Arno Manukian' className='profile_picture'></img>
-            <p className='text'>I am hard-working, responsible, always seeking for self-improvement and never afraid of challenges. I have a masters degree in architecture but decided to re-specialize to the IT field. I am highly motivated to further develop my knowledge and can't wait to start my front-end career. I learn fairly quick and can manage to adapt to any new environments and work processes. When obstacles or difficulties arise, I always find a solution, no matter how much effort or time it requires.</p>
-            <p data-aos='fade-up' className='text last'>I enjoy meeting new people and can get along with pretty much anybody. I also get along with the Google search system, because most of my life I had to deal with various problems with the computer, other devices or software issues. All my hobbies come from the TECH industry: computer games, smartphones, PCs and laptops, including their accessories.</p>
+            <p className='text'>I am a hard-working and responsible person who is always seeking to improve myself and is not afraid of challenges. I learn quickly and can adapt to new environments and work processes with ease. When faced with obstacles, I am determined to find a solution, no matter the effort or time it may require.</p>
+            <p data-aos='fade-up' className='text last'>As a person I am friendly, sociable and always enjoy meeting new people. I have experience troubleshooting various computer, device, and software issues, and regard Google as my best friend in my problem solving adventures! My hobbies and interests are all centered around the tech industry, including computer games, smartphones, PCs, laptops, and their accessories.</p>
             <SkillsSection />
             <div className='section_info'>
                 <div className='info' data-aos='fade-up'>

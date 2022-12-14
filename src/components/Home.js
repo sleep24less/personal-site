@@ -35,10 +35,10 @@ export default function Home() {
         >
             <h1 className='text_intro home'>Hello, Arno here!</h1>
             <h1 className='text_title'><b className='text_gradient'>Front-End Developer</b><b>, specializing in </b><b className='text_gradient'>React.</b></h1>
-            <p className="text">I used to be an architect with a masters degree, which has given me a deep understanding in design, composition and most importantly hard-work. Although I decided to change my profession, my studies and work in architecture made me <Link to='/about'>who I am today</Link>.
+            <p className="text">As a former architect with a master's degree, I have a strong foundation in design, composition, and most importantly hard work. While I may have decided to change my profession, my studies and work in architecture made me <Link to='/about'>who I am today</Link>.
             </p>
-            <p className='text'>Pursuing a different profession was a hard decision to make, but I'm very glad that I did. Programming has become a passion of mine which in turn gave me a lot of motivation and determination to learn everyday. I look at myself now as a sponge, I am tirelessly driven to seek and absorb new information. </p>
-            <p className='text last'>I made this website to show of my abilities and tell a little bit about myself as a person. <b>So scroll down to find out more!</b></p>
+            <p className='text'>Pursuing a different profession was a hard decision to make, but I am grateful that I did. I have found a passion for programming, which has fueled my drive and determination to learn every day. I see myself as a sponge, constantly seeking out new information and knowledge.</p>
+            <p className='text last'>I created this website to showcase my skills and provide a glimpse into my personal journey. <b>Feel free to explore and learn more about me.</b></p>
             <div className='scroll_animation'>
                 <svg className="arrows">
                     <path className="a1" d="M0 0 L30 32 L60 0"></path>
@@ -51,8 +51,8 @@ export default function Home() {
                 <div className='info' data-aos='fade-up'>
                     <img src={icon1} className='header_icon' alt=''></img>
                     <h1 className='text_section'>My work</h1>
-                    <p className='text'>All of my projects are were made while learning on a free programming course called <a href='https://www.theodinproject.com/' target='_blank' rel='noreferrer'>The Odin Project</a>. I learned new things everyday and progressed my knowledge with each project I did.</p>
-                    <p className='text'>My favorite part about these projects - there was no leading by the hand. Every given project there had a description on how it should work, some hints and a suggestion to "use Google" to figure things out.</p>
+                    <p className='text'>All of my projects were completed during my time learning on <a href='https://www.theodinproject.com/' target='_blank' rel='noreferrer'>The Odin Project</a>, a free programming course. I learned something new every day and gained valuable knowledge with each project I tackled.</p>
+                    <p className='text'>What I enjoyed most about these projects was the lack of hand-holding. Each project came with a description of its desired functionality, a few hints, and the suggestion to "use Google" to figure out the rest. This approach allowed me to truly test and expand my problem-solving skills.</p>
                 </div>
                 <div className='section_container about_work'>
                     <div data-aos='fade-right' className='left_section'>
@@ -75,7 +75,7 @@ export default function Home() {
                 <p className='text'>I am currently open for job opportunities as a Front-End/React Developer. You can view my <a href='https://www.linkedin.com/in/arnomanukian/' target='_blank' rel='noreferrer'>LinkedIn</a> profile or download my resume. You can also find all of my code on my <a href='https://github.com/sleep24less' target='_blank' rel='noreferrer'>GitHub</a>.</p>
                 <p className='text'>If you want to contact me, you're welcome to send an <a href="mailto:arnas.manucan@gmail.com" target="_blank" rel="noreferrer">Email</a> to <b>arnas.manucan@gmail.com</b> .</p>
             </div>
-        </motion.div>
+        </motion.div >
 
     )
 }
