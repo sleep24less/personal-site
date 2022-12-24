@@ -6,7 +6,6 @@ import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
-import project6 from '../assets/project6.png'
 import project7 from '../assets/project7.png'
 
 
@@ -60,12 +59,6 @@ export default function Work() {
                     title='Rock Paper Scissors game'
                     url='https://sleep24less.github.io/rock-paper-scissors/'
                     github='https://github.com/sleep24less/rock-paper-scissors' />
-                <Project
-                    key={nanoid()}
-                    img={project6}
-                    title='Sign-up form design'
-                    url='https://sleep24less.github.io/Sign-up-form/'
-                    github='https://github.com/sleep24less/Sign-up-form' />
             </div>
         </motion.div>
 
