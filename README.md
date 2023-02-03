@@ -4,9 +4,9 @@ My personal / portfolio website I created using React.js
 
 Packages used: 
 - React router dom
-- aos (animate on scroll)
 
-Library used:
+Libraries used:
 - Framer motion
+- aos (animate on scroll)
 
 Will keep updating for sure!
