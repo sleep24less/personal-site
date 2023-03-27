@@ -448,6 +448,11 @@ input:checked + .slider:before {
     margin: 0;
 }
 
+b.phrase {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
 /*_____________________________________________________ SCROLL DOWN ANIMATION */
 
 .scroll_animation {

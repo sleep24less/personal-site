@@ -44,8 +44,9 @@ export default function Home() {
                 <Link to='/about'>who I am today</Link>.
             </p>
             <p className='text last'>
-                I created this website to showcase my skills and provide a
-                glimpse into my personal journey.{' '}
+                My <b className='phrase'>main goal</b> is to start working at a
+                company where I can deliver business value while also leveling
+                up my skills as a front-end developer!{' '}
                 <b>Feel free to explore and learn more about me.</b>
             </p>
             <div className='scroll_animation'>
