@@ -36,8 +36,8 @@ export default function Work() {
                     key={nanoid()}
                     img={project6}
                     title='REST Countries'
-                    url='https://sleep24less.github.io/reiz-internship-assignment/'
-                    github='https://github.com/sleep24less/reiz-internship-assignment'
+                    url='https://sleep24less.github.io/rest-countries-pagination/'
+                    github='https://github.com/sleep24less/rest-countries-pagination'
                 />
                 <Project
                     key={nanoid()}
